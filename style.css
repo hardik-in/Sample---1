@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    position: relative;
+    padding-top: 1px;
+}
+#nav{
+    height: 11vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#nav h2{
+    height: 100%;
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+#nav h1{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+}
+#nav h2:nth-last-child(1){
+    width: 15%;
+}
+#nav h2:nth-last-child(2){
+    width: 25%;
+}
+#centre{
+    width: 100%;
+    height: 90%;
+    position: relative;
+    padding: 3vw;
+}
+#content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    padding: 3vw;
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 1vw;
+}
+#over1 h1{
+    font-family: 'Long Cang', cursive;
+    font-size: 3.5vw;
+    font-weight: 700;
+    mix-blend-mode: difference;
+}
+#over1 h2{
+    font-size: 1.7vw;
+    padding: 1.3vw 1.7vw;
+    border-radius: 55%;
+    border: 2px solid white;
+
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-top: 2px solid white;
+}
+#over2 h2{
+    font-size: 2vw;
+    margin-top: 1.5vw;
+    font-weight: 900;
+    font-family: 'Long Cang', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+#over2 img{
+    margin-top: 1.5vw;
+}
+#scroll{
+    width: 100%;
+    height: 40vh;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#container{
+    width: 110%;
+    height: 100%;
+    display: inline-block;
+    padding: 0.9vw;
+    animation-name: lopp;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    height: 80%;
+    border-radius: 50%;
+    width: 11.5%;
+    object-fit: cover;
+    object-position: top;
+    margin: 1.5vw;
+}
+@keyframes lopp {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#alphabets{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+#alphabets h5{
+    font-size: 1.8vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    border-bottom: 2px solid black;
+    letter-spacing: 4px;
+}
+#alphabets h6{
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    cursor: pointer;
+    padding: 0.6vw 0.6vw;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    letter-spacing: 4px;
+    transition: all ease 0.2s;
+}
+#alphabets h6:hover{
+    border: 1px solid black;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 2vw;
+    margin-top: 3vh;
+} 
+#page2-part1{
+    height: 100%;
+    width: 55%;
+    background-position: center;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+}
+#page2-part1 img{
+    height: 100%;
+    width: 75%;
+    border-radius: 21%;
+}
+#page2-part2{
+    height: 100%;
+    width: 40%;
+}
+#pic {
+    height: 75%;
+}
+#pic img{
+    height: 95%;
+    width: 65%;
+    border-radius: 9%;
+    border: 2px dotted black;
+}
+#text{
+    height: 25% ;
+    width: 65%;
+    gap: 1.5vw;
+}
+#pt1 h3{
+    font-size: 1.8vw;
+    font-family: 'Bungee Hairline', sans-serif;
+    font-family: 'Kanit', sans-serif;
+}
+#page3{
+    padding: 2vw 4vw;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#page3>h1{
+    text-align: center;
+    font-family: 'Bungee Hairline', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-size: 3.5vw;
+    font-weight: 580;
+    margin-bottom: 5vh;
+}
+.elem{
+    height: 17vh;
+    width: 100%;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+    transition: all ease 0.7s;
+}
+.elem img{
+    height: 90%;
+    width: 7.5%;
+    position: absolute;
+    border-radius: 50%;
+    left: 12%;
+    opacity: 0;
+    transition: all ease 0.7s;
+    object-position: top;
+    object-fit: cover;
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+.elem h4{
+    font-family: 'Poppins', sans-serif;
+    width: 6%;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+}
+.elem .elem-part2 {
+    width: 45%;
+}
+.elem .elem-part2 h1 {
+    font-size:  2.5vw;
+    font-weight: 600;
+}
+.elem .elem-part2 h5 {
+    font-size:  0.9vw;
+    font-weight: 600;
+}
+.elem:hover img{
+    opacity: 1;
+    left: 30%;
+}
+.elem:hover {
+background-color: rgba(0, 0, 0, 0.114);
+}
+#marquee{
+    height: 15vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0.5vw;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+#marquee h1{
+    display: inline-block;
+    font-size: 3.5vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    margin-right: 12px;
+    letter-spacing: 2px;
+    animation-name: move;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#footer{
+    height: 5vh;
+    width: 100%;
+}
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+@media (max-width: 600px){
+    #nav{
+        height: 8vh;
+        margin-top: 20px;
+        padding: 0 5vw;
+    }
+    #nav h2{
+        display: none;
+    }
+    #nav h1{
+        height: 100%;
+        width: 15%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: 'Rubik Doodle Shadow', system-ui;
+    }
+    #centre{
+        width: 100%;
+        height: 55%;
+        position: relative;
+        padding: 3vw;
+    }
+    #content{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    #content video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #overlay{
+        width: 100%;
+        height: 35%;
+        position: absolute;
+        bottom: 0;
+        padding: 3vw;
+    }
+    #over1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        margin-bottom: 1vw;
+    }
+    #over1 h1{
+        font-family: 'Long Cang', cursive;
+        font-size: 8.2vw;
+        font-weight: 700;
+        mix-blend-mode: difference;
+    }
+    #over1 h2{
+        font-size: 3vw;
+        padding: 1.3vw 1.7vw;
+        border-radius: 55%;
+        border: 2px solid white;
+    
+    }
+    #over2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        border-top: 2px solid white;
+    }
+    #over2 h2{
+        font-size: 4vw;
+        margin-top: 1.5vw;
+        font-weight: 900;
+        font-family: 'Long Cang', cursive;
+        font-family: 'Poppins', sans-serif;
+    }
+    #over2 img{
+        margin-top: 1.5vw;
+    }
+    #scroll{
+        width: 100%;
+        height: 20vh;
+        white-space: nowrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    #container{
+        width: 260%;
+        height: 100%;
+        display: inline-block;
+        padding: 2vw;
+        animation-name: lopp;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    #scroll img{
+        height: 90%;
+        border-radius: 50%;
+        width: 13%;
+        object-fit: cover;
+        object-position: top;
+        margin: 1.5vw;
+    }
+    @keyframes lopp {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(-100%);
+        }
+    }
+    #alphabets{
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.1vw;
+        white-space: nowrap;
+        overflow-x: auto;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+    }
+    #alphabets h6{
+        font-size: 4vw;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-style: italic;
+        cursor: pointer;
+        padding: 0.6vw 0.6vw;
+        border-radius: 50%;
+        border: 2px solid rgba(0, 0, 0, 0);
+        letter-spacing: 4px;
+        transition: all ease 0.2s;
+    }
+    #alphabets h6:hover{
+        border: 1px solid black;
+    }
+    #page2{
+        height: 50%;
+        width: 100%;
+        padding: 2vw 2vw;
+        margin-top: 3vh;
+    } 
+    #page2-part1 img{
+        display: none;
+    }
+    #page2-part2{
+        height: 100%;
+        width: 200%;
+    }
+    #pic {
+        height: 75%;
+    }
+    #pic img{
+        height: 95%;
+        width: 80%;
+        border-radius: 9%;
+    }
+    #text{
+        height: 25% ;
+        width: 65%;
+        gap: 1.5vw;
+    }
+    #pt1 h3{
+        font-size: 3vw;
+        font-family: 'Bungee Hairline', sans-serif;
+        font-family: 'Kanit', sans-serif;
+    }
+    #marquee{
+        height: 5vh;
+        width: 100%;
+        white-space: nowrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding: 0.5vw;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    #marquee h1{
+        display: inline-block;
+        font-size: 3.5vw;
+        font-weight: 500;
+        text-transform: uppercase;
+        -webkit-text-stroke: 2px black;
+        color: transparent;
+        margin-right: 12px;
+        letter-spacing: 2px;
+        animation-name: move;
+        animation-duration: 4.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
